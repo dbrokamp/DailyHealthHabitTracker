@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+
+    var today = Date()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Text(today, style: .date)
+                .padding()
+            Text("Medication Schedule")
+                .padding()
+            Text("Workout")
+                .padding()
+            Text("Daily Gratitute")
+        }
     }
 }
 
