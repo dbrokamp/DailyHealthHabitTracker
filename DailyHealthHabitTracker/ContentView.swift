@@ -21,7 +21,7 @@ struct ContentView: View {
                 .padding()
             Text("Workout")
                 .padding()
-            Text("Daily Gratitute")
+            Text("Daily Gratitude")
         }
     }
 }
