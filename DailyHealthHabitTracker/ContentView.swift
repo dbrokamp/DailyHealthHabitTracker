@@ -17,11 +17,30 @@ struct ContentView: View {
         VStack {
             Text(today, style: .date)
                 .padding()
-            Text("Medication Schedule")
-                .padding()
-            Text("Workout")
-                .padding()
-            Text("Daily Gratitude")
+            Spacer()
+                .frame(height: 10)
+            HStack {
+                Text("Medication Schedule")
+                    .padding()
+                Spacer()
+                Image(systemName: "plus")
+                    .padding()
+            }
+            HStack {
+                Text("Workout")
+                    .padding()
+                Spacer()
+                Image(systemName: "plus")
+                    .padding()
+            }
+            HStack {
+                Text("Daily Gratitude")
+                    .padding()
+                Spacer()
+                Image(systemName: "plus")
+                    .padding()
+            }
+            Spacer()
         }
     }
 }
