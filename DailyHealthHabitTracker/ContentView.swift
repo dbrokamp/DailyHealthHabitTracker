@@ -11,6 +11,10 @@ struct ContentView: View {
     
 
     var today = Date()
+    var journalIsSheetPresented = false
+    var medicationScheduleIsSheetPresented = false
+    var workoutSheetIsPresented = false
+    var dailyGratitudeSheetIsPresented = false
     
     var body: some View {
         
@@ -19,6 +23,13 @@ struct ContentView: View {
                 .padding()
             Spacer()
                 .frame(height: 10)
+            HStack {
+                Text("Journal")
+                    .padding()
+                Spacer()
+                Image(systemName: "plus")
+                    .padding()
+            }
             HStack {
                 Text("Medication Schedule")
                     .padding()
