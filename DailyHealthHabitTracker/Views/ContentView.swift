@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
 
-    var today = Date()
-    var journalIsSheetPresented = false
+    @State var today = Date()
+    @State var journalIsSheetPresented = false
     var medicationScheduleIsSheetPresented = false
     var workoutSheetIsPresented = false
     var dailyGratitudeSheetIsPresented = false
@@ -20,6 +20,7 @@ struct ContentView: View {
         
         VStack {
             Text(today, style: .date)
+                .font(.title)
                 .padding()
             Spacer()
                 .frame(height: 10)
@@ -27,8 +28,14 @@ struct ContentView: View {
                 Text("Journal")
                     .padding()
                 Spacer()
-                Image(systemName: "plus")
-                    .padding()
+                Button(action: {
+                    journalIsSheetPresented.toggle()
+                }, label: {
+                    Image(systemName: "plus")
+                        .padding()
+                })
+                    .sheet(isPresented: $journalIsSheetPresented, onDismiss: {}, content: { NewJournalEntry(today: $today, journalIsSheetPresented: $journalIsSheetPresented) })
+
             }
             HStack {
                 Text("Medication Schedule")

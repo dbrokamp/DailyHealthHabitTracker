@@ -14,6 +14,9 @@
 		667F505027B8CE3500F4E6EE /* DailyHealthHabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F504F27B8CE3500F4E6EE /* DailyHealthHabitTrackerTests.swift */; };
 		667F505A27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F505927B8CE3600F4E6EE /* DailyHealthHabitTrackerUITests.swift */; };
 		667F505C27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F505B27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITestsLaunchTests.swift */; };
+		66DD292127BDC73F001432DA /* NewJournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD292027BDC73F001432DA /* NewJournalEntry.swift */; };
+		66DD292227BDC73F001432DA /* NewJournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD292027BDC73F001432DA /* NewJournalEntry.swift */; };
+		66DD292327BDC73F001432DA /* NewJournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD292027BDC73F001432DA /* NewJournalEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		667F505527B8CE3600F4E6EE /* DailyHealthHabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyHealthHabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		667F505927B8CE3600F4E6EE /* DailyHealthHabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHealthHabitTrackerUITests.swift; sourceTree = "<group>"; };
 		667F505B27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHealthHabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66DD292027BDC73F001432DA /* NewJournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		667F503D27B8CE3300F4E6EE /* DailyHealthHabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				66DD291B27BDC6FD001432DA /* Views */,
 				667F503E27B8CE3300F4E6EE /* DailyHealthHabitTrackerApp.swift */,
-				667F504027B8CE3300F4E6EE /* ContentView.swift */,
 				667F504227B8CE3500F4E6EE /* Assets.xcassets */,
 				667F504427B8CE3500F4E6EE /* Preview Content */,
 			);
@@ -125,6 +129,15 @@
 				667F505B27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITestsLaunchTests.swift */,
 			);
 			path = DailyHealthHabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		66DD291B27BDC6FD001432DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				667F504027B8CE3300F4E6EE /* ContentView.swift */,
+				66DD292027BDC73F001432DA /* NewJournalEntry.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			files = (
 				667F504127B8CE3300F4E6EE /* ContentView.swift in Sources */,
 				667F503F27B8CE3300F4E6EE /* DailyHealthHabitTrackerApp.swift in Sources */,
+				66DD292127BDC73F001432DA /* NewJournalEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667F505027B8CE3500F4E6EE /* DailyHealthHabitTrackerTests.swift in Sources */,
+				66DD292227BDC73F001432DA /* NewJournalEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +291,7 @@
 			files = (
 				667F505C27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITestsLaunchTests.swift in Sources */,
 				667F505A27B8CE3600F4E6EE /* DailyHealthHabitTrackerUITests.swift in Sources */,
+				66DD292327BDC73F001432DA /* NewJournalEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
