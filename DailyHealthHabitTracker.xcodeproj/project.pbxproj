@@ -98,8 +98,9 @@
 		667F503D27B8CE3300F4E6EE /* DailyHealthHabitTracker */ = {
 			isa = PBXGroup;
 			children = (
-				66DD291B27BDC6FD001432DA /* Views */,
-				667F503E27B8CE3300F4E6EE /* DailyHealthHabitTrackerApp.swift */,
+				66A8681F27BE850A00B5759F /* Model */,
+				66A8681E27BE84FF00B5759F /* View */,
+				66DD291B27BDC6FD001432DA /* ViewModels */,
 				667F504227B8CE3500F4E6EE /* Assets.xcassets */,
 				667F504427B8CE3500F4E6EE /* Preview Content */,
 			);
@@ -131,13 +132,28 @@
 			path = DailyHealthHabitTrackerUITests;
 			sourceTree = "<group>";
 		};
-		66DD291B27BDC6FD001432DA /* Views */ = {
+		66A8681E27BE84FF00B5759F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				667F503E27B8CE3300F4E6EE /* DailyHealthHabitTrackerApp.swift */,
 				667F504027B8CE3300F4E6EE /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66A8681F27BE850A00B5759F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66DD291B27BDC6FD001432DA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
 				66DD292027BDC73F001432DA /* NewJournalEntry.swift */,
 			);
-			path = Views;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
