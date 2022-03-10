@@ -19,11 +19,21 @@ struct ContentView: View {
     var body: some View {
         VStack {
             DateTitle(today: today)
+            Text("Weather")
+                .task {
+                    getWeather()
+                }
             TrackerTitle(title: "Journal")
             TrackerTitle(title: "Medication")
             TrackerTitle(title: "Workout")
             TrackerTitle(title: "Daily Gratitude")
         }
+    }
+    
+    func getWeather() {
+        // Load URL
+        
+        // Parse JSON
     }
 }
 
